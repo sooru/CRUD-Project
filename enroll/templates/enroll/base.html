@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static 'enroll/styyle.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Function Based view ModelForm CRUD Project</h2>
+        </div>
+        <div class="cont2">
+            <div class="left">
+                <div class="lh">{% block head %} Add New Student{% endblock head %}</div>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div id="label">{{field.label_tag}}</div>
+                    {{field}}
+                    {% endfor %}
+                    {% block btn %}<div ><input type="Submit" id="submit" Value="Add"></div>{% endblock btn %}
+                </form>
+            </div>
+
+            <div class="right">
+                <div class="rh">Show Student Information</div>
+                <table>
+                    <!-- <div id="labelrow"> -->
+                        
+                        <thead> 
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th class="tablebutton">Action</th>
+                        </tr>
+                        
+                    </thead>
+                    
+                    <!-- </div> -->
+                    <!-- <div id="controw"> -->
+                        {% for field in data %}
+                        <!-- <div class="ffg"> -->
+                        <tr class="righttr">
+                            <td class="tdd" > {{field.id}} </td>
+                            <td class="tdd" > {{field.name}} </td>
+                            <td class="tdd" > {{field.email}}</td>
+                            <td class="tdd" >{{field.password}}</td>
+                        <td class="tablebutton "><a class="btn" href="{% url 'edit' field.id %}" >Edit</a>
+                            <a class="btn" href="{% url 'delete' field.id %}">Delete</a>
+                        </td>
+                        
+                    </tr>
+                        {% endfor %}
+
+                    <!-- </div> -->
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

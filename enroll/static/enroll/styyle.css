@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.container{
+    padding:77px 47px;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* background-color: blanchedalmond; */
+    border: 2px solid black;
+    height: 100%;
+}
+.head{
+    font-weight: bold;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(180, 200, 230);
+    width: 870px;;
+    margin: 20px auto;
+    border: 2px solid red;
+}
+.cont2{
+    overflow: auto;
+    display: flex ;
+    flex-wrap: wrap;
+    /* height: 550px; */
+    /* justify-content: space-around; */
+    /* border: 2px solid green; */
+}
+.left{
+    /* width: 250px; */
+    /* border: 2px solid black; */
+    /* align-items: center; */
+    /* display: flex; */
+    height: 550px;
+    margin: 25px 48px 25px 275px;
+     /* overflow: hidden;  */
+}
+.right{
+    /* border: 2px solid black; */
+    /* display: inline-flex; */
+    /* width:fit-content; */
+
+overflow: auto;
+margin-top: 25px;
+/* align-items: center; */
+}
+.lh,.rh{
+    font-weight: bold;
+    margin: 15px 0px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(97, 150, 230);
+}
+#label{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    
+}
+form  input{
+    padding: 3px;
+    width: 250px;
+}
+#submit{
+    margin: 4px 0px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px 10px;
+    background-color: rgb(186, 178, 236);
+}
+#submit:hover{
+    cursor: pointer;
+}
+#labelrow{
+    margin: 2px;
+}
+table{
+    margin-top: 21px;
+}
+th{
+    box-sizing: border-box;
+    /* margin: ; */
+    padding: 4px 9px;
+    border: 2px solid black;
+}
+.tdd{
+    /* margin: ; */
+    padding: 4px 11px;
+    border: 2px solid black;
+}
+
+.tablebutton{
+    padding: 7px 6px;
+    display: block;
+    /* float:right; */
+    /* margin-left: 30px; */
+    /* margin: 2px; */
+    /* display: flex;
+    width: ; */
+    /* flex-direction: row-reverse; */
+    /* position: relative; */
+    /* right: 48px; */
+    /* border: 2px solid green; */
+    /* border: 2px solid white; */
+}
+.btn{
+    border: 2px solid black;
+    margin: 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 4px 11px;
+    color: black;
+    /* float: right; */
+    background-color: rgb(186, 178, 236);
+}
